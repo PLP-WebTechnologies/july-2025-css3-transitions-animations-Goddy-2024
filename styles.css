@@ -1,0 +1,30 @@
+/* BASIC LAYOUT */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* TRANSITION EXAMPLE */
+#animatedBox {
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease;
+}
+
+/* KEYFRAME ANIMATION */
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+
+.bouncing {
+    animation: bounce 1s ease infinite;
+}
